@@ -1,0 +1,31 @@
+# This MVP runs on Python 3.10+ and the standard library by default.
+# Optional packages for later extensions:
+
+# Core
+python-dotenv>=1.0,<2.0
+requests>=2.31,<3.0
+
+# RDKit - Optional (install separately, see below)
+# The package name varies by Python version:
+#   Python 3.8-3.11: rdkit-pypi>=2022.9.5
+#   Python 3.12+:    rdkit (from conda-forge recommended)
+#
+# To install RDKit, use conda (recommended):
+#   conda install -c conda-forge rdkit
+#
+# Or via pip for Python <=3.11:
+#   pip install rdkit-pypi>=2022.9.5
+#
+# If RDKit is not installed, the system will use fallback heuristics.
+
+# MCP Server (Model Context Protocol)
+fastmcp>=0.1.0
+
+# LLM Integration (Optional - for enhanced natural language generation)
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-openai>=0.2.0
+
+# Additional utilities
+rich>=13.7.0
+typer>=0.9.0
